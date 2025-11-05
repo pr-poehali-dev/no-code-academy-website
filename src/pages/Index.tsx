@@ -68,7 +68,7 @@ export default function Index() {
       <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-lg z-50 border-b border-purple-100">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <h1 className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+            <h1 className="text-2xl font-bold text-purple-600">
               ПРОРЫВ
             </h1>
             <div className="hidden md:flex gap-6">
@@ -94,7 +94,7 @@ export default function Index() {
       <section id="главная" className="pt-32 pb-20 px-4">
         <div className="container mx-auto text-center">
           <div className="animate-fade-in">
-            <h2 className="text-6xl md:text-7xl font-black mb-6 bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 bg-clip-text text-transparent leading-tight">
+            <h2 className="text-6xl md:text-7xl font-black mb-6 text-purple-600 leading-tight">
               Твой прорыв в IT<br/>начинается здесь
             </h2>
             <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
@@ -126,7 +126,7 @@ export default function Index() {
       <section id="курсы" className="py-20 px-4 bg-white/50">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold mb-4 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+            <h2 className="text-5xl font-bold mb-4 text-purple-600">
               Наши курсы
             </h2>
             <p className="text-xl text-gray-600">Выбери направление и стань востребованным специалистом</p>
@@ -167,7 +167,7 @@ export default function Index() {
       <section id="о-нас" className="py-20 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold mb-4 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+            <h2 className="text-5xl font-bold mb-4 text-purple-600">
               Почему выбирают нас
             </h2>
             <p className="text-xl text-gray-600">Академия с результатами, которым можно доверять</p>
@@ -192,7 +192,7 @@ export default function Index() {
       <section id="отзывы" className="py-20 px-4 bg-gradient-to-br from-purple-100 via-pink-50 to-orange-50">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold mb-4 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+            <h2 className="text-5xl font-bold mb-4 text-purple-600">
               Отзывы студентов
             </h2>
             <p className="text-xl text-gray-600">Истории успеха наших выпускников</p>
@@ -228,7 +228,7 @@ export default function Index() {
       <section id="контакты" className="py-20 px-4 bg-white/50">
         <div className="container mx-auto max-w-2xl">
           <div className="text-center mb-12">
-            <h2 className="text-5xl font-bold mb-4 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+            <h2 className="text-5xl font-bold mb-4 text-purple-600">
               Свяжитесь с нами
             </h2>
             <p className="text-xl text-gray-600">Оставьте заявку и мы свяжемся с вами в течение часа</p>
