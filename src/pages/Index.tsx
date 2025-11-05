@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
+import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 import Icon from '@/components/ui/icon';
 
 export default function Index() {
@@ -41,6 +42,19 @@ export default function Index() {
       description: 'По окончании курса получите международный сертификат',
       image: 'https://cdn.poehali.dev/projects/d258da97-1ae0-4f25-9b98-84399f4c550e/files/565e2b2d-7efd-4e08-9e26-3d825e4741d6.jpg'
     }
+  ];
+
+  const features = [
+    { icon: 'Rocket', title: 'Современные технологии', desc: 'Актуальный стек технологий 2024 года' },
+    { icon: 'Users', title: 'Опытные менторы', desc: 'Практикующие специалисты из IT-компаний' },
+    { icon: 'Trophy', title: 'Гарантия трудоустройства', desc: 'Помощь в поиске работы после обучения' },
+    { icon: 'Clock', title: 'Гибкий график', desc: 'Онлайн и офлайн обучение в удобное время' }
+  ];
+
+  const testimonials = [
+    { name: 'Алексей М.', role: 'Frontend Developer', text: 'Прошёл курс Frontend - за 3 месяца устроился в Яндекс! Невероятно крутая программа', initials: 'АМ' },
+    { name: 'Мария С.', role: 'UX Designer', text: 'Преподаватели - профессионалы своего дела. Портфолио помогли собрать с нуля', initials: 'МС' },
+    { name: 'Дмитрий К.', role: 'Fullstack Developer', text: 'Лучшие инвестиции в себя! Сейчас работаю на фрилансе, зарабатываю в 3 раза больше', initials: 'ДК' }
   ];
 
   const courses = [
@@ -238,6 +252,67 @@ export default function Index() {
                   <Button className="w-full bg-secondary hover:bg-secondary/90">
                     Записаться
                   </Button>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 px-4 bg-gradient-to-br from-purple-50 to-white">
+        <div className="container mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl font-bold mb-4 text-primary">
+              Почему выбирают нас
+            </h2>
+            <p className="text-xl text-gray-600">Академия с результатами, которым можно доверять</p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {features.map((feature, index) => (
+              <Card 
+                key={index} 
+                className="text-center p-6 hover:shadow-xl transition-all hover:-translate-y-1 border-purple-100"
+              >
+                <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center">
+                  <Icon name={feature.icon} size={32} className="text-white" />
+                </div>
+                <h3 className="text-xl font-bold mb-2">{feature.title}</h3>
+                <p className="text-gray-600">{feature.desc}</p>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 px-4 bg-gradient-to-br from-purple-100 via-pink-50 to-orange-50">
+        <div className="container mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl font-bold mb-4 text-primary">
+              Отзывы студентов
+            </h2>
+            <p className="text-xl text-gray-600">Истории успеха наших выпускников</p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6">
+            {testimonials.map((testimonial, index) => (
+              <Card key={index} className="hover:shadow-xl transition-all">
+                <CardHeader>
+                  <div className="flex items-center gap-4 mb-4">
+                    <Avatar className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500">
+                      <AvatarFallback className="text-white font-bold">{testimonial.initials}</AvatarFallback>
+                    </Avatar>
+                    <div>
+                      <CardTitle className="text-lg">{testimonial.name}</CardTitle>
+                      <CardDescription>{testimonial.role}</CardDescription>
+                    </div>
+                  </div>
+                  <div className="flex gap-1 mb-2">
+                    {[...Array(5)].map((_, i) => (
+                      <Icon key={i} name="Star" size={16} className="fill-yellow-400 text-yellow-400" />
+                    ))}
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600 italic">"{testimonial.text}"</p>
                 </CardContent>
               </Card>
             ))}
