@@ -19,27 +19,27 @@ export default function Index() {
     {
       title: 'Защита от троек в школе',
       description: 'При покупке курса для детей дарим месяц подписки на онлайн-занятия, чтобы ребенок лучше учился в школе',
-      image: 'https://cdn.poehali.dev/files/e1967b04-ebae-4d88-9991-f17b8abe5358.jpeg'
+      image: 'https://cdn.poehali.dev/projects/d258da97-1ae0-4f25-9b98-84399f4c550e/files/ff8a7104-aa22-4d47-bbee-b379e8bdad7c.jpg'
     },
     {
       title: 'Бесплатный пробный урок',
       description: 'Запишитесь на бесплатное занятие и оцените качество обучения',
-      image: 'https://cdn.poehali.dev/files/e1967b04-ebae-4d88-9991-f17b8abe5358.jpeg'
+      image: 'https://cdn.poehali.dev/projects/d258da97-1ae0-4f25-9b98-84399f4c550e/files/5bee148c-3897-4a7d-884d-c169020e626c.jpg'
     },
     {
       title: 'Скидка на второй курс',
       description: 'Оплатите два курса сразу и получите 20% скидку на второй',
-      image: 'https://cdn.poehali.dev/files/e1967b04-ebae-4d88-9991-f17b8abe5358.jpeg'
+      image: 'https://cdn.poehali.dev/projects/d258da97-1ae0-4f25-9b98-84399f4c550e/files/ea68873e-52c9-4ac8-ba0f-39b0ab102015.jpg'
     },
     {
       title: 'Гарантия возврата',
       description: 'Если курс не понравился в первую неделю - вернем деньги',
-      image: 'https://cdn.poehali.dev/files/e1967b04-ebae-4d88-9991-f17b8abe5358.jpeg'
+      image: 'https://cdn.poehali.dev/projects/d258da97-1ae0-4f25-9b98-84399f4c550e/files/f3ffa079-461e-4fc4-936c-acbf4c02c69d.jpg'
     },
     {
       title: 'Сертификат UNESCO',
       description: 'По окончании курса получите международный сертификат',
-      image: 'https://cdn.poehali.dev/files/e1967b04-ebae-4d88-9991-f17b8abe5358.jpeg'
+      image: 'https://cdn.poehali.dev/projects/d258da97-1ae0-4f25-9b98-84399f4c550e/files/565e2b2d-7efd-4e08-9e26-3d825e4741d6.jpg'
     }
   ];
 
@@ -49,28 +49,28 @@ export default function Index() {
       duration: '3 месяца',
       level: 'Начальный',
       price: '18 900 ₽',
-      image: 'https://cdn.poehali.dev/files/e1967b04-ebae-4d88-9991-f17b8abe5358.jpeg'
+      image: 'https://cdn.poehali.dev/projects/d258da97-1ae0-4f25-9b98-84399f4c550e/files/ea68873e-52c9-4ac8-ba0f-39b0ab102015.jpg'
     },
     {
       title: 'Web-разработка',
       duration: '6 месяцев',
       level: 'Средний',
       price: '35 000 ₽',
-      image: 'https://cdn.poehali.dev/files/e1967b04-ebae-4d88-9991-f17b8abe5358.jpeg'
+      image: 'https://cdn.poehali.dev/projects/d258da97-1ae0-4f25-9b98-84399f4c550e/files/f3ffa079-461e-4fc4-936c-acbf4c02c69d.jpg'
     },
     {
       title: 'Создание игр',
       duration: '4 месяца',
       level: 'Для детей',
       price: '22 500 ₽',
-      image: 'https://cdn.poehali.dev/files/e1967b04-ebae-4d88-9991-f17b8abe5358.jpeg'
+      image: 'https://cdn.poehali.dev/projects/d258da97-1ae0-4f25-9b98-84399f4c550e/files/5bee148c-3897-4a7d-884d-c169020e626c.jpg'
     },
     {
       title: 'Data Science',
       duration: '8 месяцев',
       level: 'Продвинутый',
       price: '45 000 ₽',
-      image: 'https://cdn.poehali.dev/files/e1967b04-ebae-4d88-9991-f17b8abe5358.jpeg'
+      image: 'https://cdn.poehali.dev/projects/d258da97-1ae0-4f25-9b98-84399f4c550e/files/565e2b2d-7efd-4e08-9e26-3d825e4741d6.jpg'
     }
   ];
 
@@ -111,16 +111,16 @@ export default function Index() {
         </div>
       </nav>
 
-      <section className="pt-24 pb-16 px-4 bg-gradient-to-br from-gray-50 to-purple-50">
+      <section className="pt-24 pb-16 px-4 bg-gradient-to-br from-purple-50 via-white to-pink-50">
         <div className="container mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
+            <div className="animate-fade-in">
               <h1 className="text-5xl md:text-6xl font-black mb-6 text-primary leading-tight">
                 РОССИЙСКАЯ<br/>
                 IT ШКОЛА<br/>
                 ПРОРЫВ
               </h1>
-              <div className="bg-primary text-white p-6 rounded-3xl mb-8 max-w-lg">
+              <div className="bg-primary/90 text-white p-6 rounded-3xl mb-8 max-w-lg shadow-xl">
                 <p className="text-lg leading-relaxed">
                   Крупнейшая экосистема очного и онлайн-образования для всех возрастов, 
                   признанная ЮНЕСКО
@@ -130,20 +130,20 @@ export default function Index() {
                 {advantages.map((adv, index) => (
                   <Button 
                     key={index} 
-                    className="bg-secondary hover:bg-secondary/90 text-white h-auto py-4 text-sm font-semibold"
+                    className="bg-secondary hover:bg-secondary/90 text-white h-auto py-4 text-sm font-semibold shadow-lg hover:shadow-xl transition-all hover:-translate-y-1"
                   >
                     {adv}
                   </Button>
                 ))}
               </div>
-              <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white px-12 py-6 text-base font-bold rounded-xl">
+              <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white px-12 py-6 text-base font-bold rounded-xl shadow-2xl hover:shadow-secondary/50 transition-all hover:scale-105">
                 ОСТАВИТЬ ЗАЯВКУ
               </Button>
             </div>
-            <div className="relative">
-              <div className="rounded-3xl overflow-hidden shadow-2xl">
+            <div className="relative animate-scale-in">
+              <div className="rounded-3xl overflow-hidden shadow-2xl hover:shadow-purple-500/30 transition-shadow">
                 <img 
-                  src="https://cdn.poehali.dev/files/e1967b04-ebae-4d88-9991-f17b8abe5358.jpeg" 
+                  src="https://cdn.poehali.dev/projects/d258da97-1ae0-4f25-9b98-84399f4c550e/files/565e2b2d-7efd-4e08-9e26-3d825e4741d6.jpg" 
                   alt="Студенты IT школы" 
                   className="w-full h-auto object-cover"
                 />
@@ -156,16 +156,16 @@ export default function Index() {
       <section className="py-16 px-4 bg-accent">
         <div className="container mx-auto">
           <div className="text-center mb-8">
-            <Badge className="bg-white text-accent text-sm px-4 py-2 mb-4">
+            <Badge className="bg-white text-accent text-base px-6 py-3 mb-4 font-bold shadow-lg animate-pulse">
               🔥 только до 31.12
             </Badge>
           </div>
           <div className="grid lg:grid-cols-2 gap-8 items-center max-w-5xl mx-auto">
-            <div className="relative rounded-2xl overflow-hidden shadow-xl">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img 
                 src={promoSlides[currentSlide].image}
                 alt={promoSlides[currentSlide].title}
-                className="w-full h-80 object-cover"
+                className="w-full h-80 object-cover transition-all duration-500"
               />
             </div>
             <div className="text-white">
@@ -173,7 +173,7 @@ export default function Index() {
               <p className="text-lg mb-6 text-purple-100">{promoSlides[currentSlide].description}</p>
               <Button 
                 variant="outline" 
-                className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-accent mb-8"
+                className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-accent mb-8 shadow-lg transition-all hover:scale-105"
               >
                 ВЫБРАТЬ КУРС
               </Button>
@@ -182,18 +182,18 @@ export default function Index() {
                   onClick={prevSlide}
                   size="icon"
                   variant="outline"
-                  className="bg-white/10 border-white/30 text-white hover:bg-white/20"
+                  className="bg-white/10 border-white/30 text-white hover:bg-white/20 transition-all hover:scale-110"
                 >
                   <Icon name="ChevronLeft" size={20} />
                 </Button>
-                <span className="text-white font-medium">
+                <span className="text-white font-medium text-lg">
                   {currentSlide + 1} / {promoSlides.length}
                 </span>
                 <Button 
                   onClick={nextSlide}
                   size="icon"
                   variant="outline"
-                  className="bg-white/10 border-white/30 text-white hover:bg-white/20"
+                  className="bg-white/10 border-white/30 text-white hover:bg-white/20 transition-all hover:scale-110"
                 >
                   <Icon name="ChevronRight" size={20} />
                 </Button>
